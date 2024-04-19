@@ -1,0 +1,22 @@
+#lang scheme
+
+
+(cons 'b
+(cons 'g (cons
+ (cons 'e (cons 'f
+      (cons
+       (cons 'b '()) '()))) '())))
+
+
+(define L
+  (cons
+       2 (cons
+          * (cons
+               'd '()))
+   )
+  )
+((car (cdr L)) (car L) 3)
+
+      
+
+
